@@ -12,10 +12,10 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import StorageIcon from '@material-ui/icons/Storage';
 
-const index = () => {
+const index = ({user}) => {
     return (
         <div className='sidebar'>
-            <NewFile />
+            <NewFile user={user}/>
 
             <div className="sidebar__itemsContainer">
                 <SidebarItem arrow icon={(<InsertDriveFileIcon />)} label={'My Drive'} />
